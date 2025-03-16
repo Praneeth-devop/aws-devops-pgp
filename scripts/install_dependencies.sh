@@ -1,15 +1,16 @@
+
+install_dependencies.sh
+
+bash
 #!/bin/bash
 
-# Update the package repository
-sudo yum update -y            # For Amazon Linux/RedHat-based OS
-# sudo apt-get update -y      # Uncomment for Debian/Ubuntu-based OS
+# Update package list
+sudo apt update
 
-# Install application dependencies (example: Python and pip)
-sudo yum install -y python3 python3-pip
-# Install additional dependencies (e.g., specific libraries)
-pip3 install -r /home/ec2-user/aws-devops-pgp/app/requirements.txt
+# Install dependencies (replace with your actual dependencies)
+sudo apt install -y python3 python3-pip git
 
-# Ensure required directories exist
-mkdir -p /home/ec2-user/aws-devops-pgp/logs
+# Install Python dependencies using pip (replace with your actual dependencies)
+sudo pip3 install -r requirements.txt
 
-echo "Dependencies installed successfully."
+
