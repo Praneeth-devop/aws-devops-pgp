@@ -1,22 +1,20 @@
-
----
-
 version: 0.0
 os: linux
 files:
-  - source: /app
-    destination: /home/ec2-user/aws-devops-pgp/app
-  - source: /config.py
-    destination: /home/ec2-user/aws-devops-pgp/
-  - source: /app.py
-    destination: /home/ec2-user/aws-devops-pgp/
+  - source: /
+    destination: /home/ubuntu/aws-devops-pgp
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/restart_server.sh
+    - location: scripts/configure_app.sh
       timeout: 300
       runas: root
+  ApplicationStart:
+    - location: scripts/start_app.sh
+      timeout: 300
+      runas: root
+
 
