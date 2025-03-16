@@ -1,6 +1,6 @@
-custombucket = "destinationtxt"
+custombucket = "zendrix-software-artifacts-15mar2025"
 table = "intellipaat"
-databasehost = "database-1.c14bnmt8jlz0.us-east-1.rds.amazonaws.com"
+databasehost = "database-1.cc7k6w4syysb.us-east-1.rds.amazonaws.com"
 duser = "intel"
 dpass = "intel123"
 s3database = "intellipaat"
