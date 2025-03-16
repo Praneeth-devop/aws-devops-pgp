@@ -1,14 +1,12 @@
+bash
 #!/bin/bash
 
-# Stop the application (if already running)
-echo "Stopping the application..."
-sudo systemctl stop my-app-service || true  # Avoid errors if service isn't running
+# Create a configuration file (replace with your actual configuration)
+sudo tee /home/ubuntu/aws-devops-pgp/config.txt << EOF
+# Configuration settings
+EOF
 
-# Start the application
-echo "Starting the application..."
-sudo systemctl start my-app-service
+# Set environment variables (replace with your actual environment variables)
+export APP_NAME="My App"
+export APP_VERSION="1.0"
 
-# Optional: Verify the application status
-sudo systemctl status my-app-service
-
-echo "Application restarted successfully."
