@@ -4,12 +4,8 @@ files:
   - source: .
     destination: /home/ubuntu/aws-devops-pgp
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
-    - location: scripts/start_app.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
 
