@@ -1,1 +1,1 @@
-sudo python3 app.py
+sudo python3 /home/ubuntu/aws-devops-pgp/app.py
