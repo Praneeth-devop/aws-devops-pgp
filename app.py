@@ -15,6 +15,7 @@ db_conn = connections.Connection(
 
 )
 
+FLASK_APP_URL = "http://3.90.53.145:32443/"
 
 @app.route("/", methods=['GET', 'POST'])
 def hello_world():
@@ -55,6 +56,7 @@ def hello_world():
     print("Uploading to S3 success... ")
     return render_template("index.html")
 
+kapp = "http://3.90.53.145:32443/"
 
 @app.route("/check", methods=['GET', 'POST'])
 def hello():
