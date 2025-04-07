@@ -1,4 +1,4 @@
-custombucket = "demobuck-25mar2025"
+custombucket = "projectbucket7april2025"
 table = "intellipaat"
 databasehost = "database-1.cc7k6w4syysb.us-east-1.rds.amazonaws.com"
 duser = "intel"
