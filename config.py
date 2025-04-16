@@ -1,6 +1,6 @@
-custombucket = "projectbucket7april2025"
+custombucket = "projectbucket16april2025"
 table = "intellipaat"
-databasehost = "database-1.cc7k6w4syysb.us-east-1.rds.amazonaws.com"
+databasehost = "database-1.c478m8kmwxtf.us-east-1.rds.amazonaws.com"
 duser = "intel"
 dpass = "intel123"
 s3database = "intellipaat"
